@@ -11,7 +11,6 @@
 	<groupId>com.pluralsight</groupId>
 	<artifactId>conference-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
 	<name>conference-demo</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -25,13 +24,9 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
-		<!--Chapter 5 dependency to exclude Tomcat -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<!-- It means Tomcat will not be embedded but will be provided externally-->
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
